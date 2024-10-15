@@ -6,26 +6,26 @@ public class NumberOfBugs {
 
 	
 	
-	public float BugsCalc  (float a, float b, float e, List<Integer> bugTime, List<Integer> bugNumber) {
-		float c = 0;
-		float ya = 0;
-		float yb = 0;
-		float yc = 0;
-		float partOfFirstPartA =0;
-		float firstPartA =0;
+	public double BugsCalc  (double a, double b, double e, List<Integer> bugTime, List<Integer> bugNumber) {
+		double c = 0;
+		double ya = 0;
+		double yb = 0;
+		double yc = 0;
+		double partOfFirstPartA =0;
+		double firstPartA =0;
+
+		double partOfFirstPartB =0;
+		double firstPartB =0;
+
+		double partOfFirstPartC =0;
+		double firstPartC =0;
+
+		double secondPart =0;
+		double thirdPart =0;
+
+		double x;
 		
-		float partOfFirstPartB =0;
-		float firstPartB =0;
-		
-		float partOfFirstPartC =0;
-		float firstPartC =0;
-		
-		float secondPart =0;
-		float thirdPart =0;
-		
-		float x;
-		
-		System.out.println  ("|LowerPoint a |MiddlePoint c|UpperPoint b |B(a)       |B(с)         |B(b)        |LeftPart(a)  |LeftPart(b) |LeftPart(c)  |RightPartDivisible |RightPartDivider|");
+		//System.out.println  ("|LowerPoint a |MiddlePoint c|UpperPoint b |B(a)       |B(с)         |B(b)        |LeftPart(a)  |LeftPart(b) |LeftPart(c)  |RightPartDivisible |RightPartDivider|");
 				
 		
 		
@@ -59,10 +59,10 @@ public class NumberOfBugs {
 				yc = firstPartC-((bugTime.size()*secondPart)/((c+1)*secondPart-thirdPart));
 							
 				
-			String str = String.format (
-					"|%1$+.8f |%2$+.8f |%3$+.8f |%4$+.8f|%5$+.8f  |%6$+.8f |%7$+.8f  |%8$+.8f |%9$+.8f  |%10$+.8f      |%11$+.8f  |" , 
-					a, c, b, ya, yb, yc,	firstPartA, firstPartB, firstPartC, secondPart, thirdPart);		
-			System.out.println(str);
+//			String str = String.format (
+//					"|%1$+.8f |%2$+.8f |%3$+.8f |%4$+.8f|%5$+.8f  |%6$+.8f |%7$+.8f  |%8$+.8f |%9$+.8f  |%10$+.8f      |%11$+.8f  |" ,
+//					a, c, b, ya, yb, yc,	firstPartA, firstPartB, firstPartC, secondPart, thirdPart);
+//			System.out.println(str);
 			
 					
 			
