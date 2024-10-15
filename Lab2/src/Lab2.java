@@ -48,7 +48,7 @@ public static void main (String[] args) throws IOException  {
 		
 	float b = 100;
 	
-	float e = 0.001;
+	float e = (float)0.001;
 	
 	//Вычислить общее количество ошибок в программе
 	NumberOfBugs numberOfBugs = new NumberOfBugs();
