@@ -42,13 +42,13 @@ public static void main (String[] args) throws IOException  {
 	
 
 	//Считать из консоли интервал [a, b]и погрешность e
-	Scanner in = new Scanner(System.in);
-	System.out.println ("Введите нижнюю границу интервала");
-	float a = in.nextFloat();
-	System.out.println ("Введите верхнюю границу интервала");	
-	float b = in.nextFloat();
-	System.out.println ("Введите желаемую погрешность");
-	float e = in.nextFloat();
+	
+	
+	float a = 26;
+		
+	float b = 100;
+	
+	float e = 0.001;
 	
 	//Вычислить общее количество ошибок в программе
 	NumberOfBugs numberOfBugs = new NumberOfBugs();
